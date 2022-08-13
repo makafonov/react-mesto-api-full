@@ -26,7 +26,7 @@ const handleUserError = (err, next) => {
   }
 };
 
-const handleError = (err, req, res, next) => {
+const handleError = (err, req, res) => {
   const { statusCode = 500, message } = err;
 
   res
