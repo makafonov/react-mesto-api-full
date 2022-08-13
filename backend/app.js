@@ -5,6 +5,7 @@ const { errors, Joi, celebrate } = require('celebrate');
 const { PORT, DATABASE_URL } = require('./src/config');
 const userController = require('./src/controllers/user');
 const auth = require('./src/middlewares/auth');
+const cors = require('./src/middlewares/cors');
 const { requestLogger, errorLogger } = require('./src/middlewares/logger');
 const { routes } = require('./src/routes');
 const { handleError } = require('./src/errors');
@@ -14,6 +15,7 @@ const app = express();
 
 app.use(express.json());
 app.use(requestLogger);
+app.use(cors);
 
 app.post(
   '/signin',
