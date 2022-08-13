@@ -1,3 +1,5 @@
+import config from '../config.json';
+
 class authenticationApi {
   constructor({ baseUrl, headers }) {
     this._baseUrl = baseUrl;
@@ -33,7 +35,7 @@ class authenticationApi {
 }
 
 const authApi = new authenticationApi({
-  baseUrl: 'https://auth.nomoreparties.co',
+  baseUrl: config.SERVER_URL,
   headers: {
     'Content-Type': 'application/json',
   },
