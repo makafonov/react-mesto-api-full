@@ -9,8 +9,9 @@ const JWT_EXPIRES_IN = '7d';
 const ALLOWED_CORS = [
   'https://onemore.nomoredomains.sbs',
   'http://onemore.nomoredomains.sbs',
-  'localhost:3000',
+  'http://localhost:3000',
 ];
+const DEFAULT_ALLOWED_METHODS = ['GET', 'HEAD', 'PUT', 'PATCH', 'POST', 'DELETE'].join();
 
 module.exports = {
   PORT,
@@ -19,4 +20,5 @@ module.exports = {
   SALT_LENGTH,
   JWT_EXPIRES_IN,
   ALLOWED_CORS,
+  DEFAULT_ALLOWED_METHODS,
 };
