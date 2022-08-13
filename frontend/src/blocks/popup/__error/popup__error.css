@@ -1,0 +1,20 @@
+.popup__error {
+  display: block;
+  min-height: 30px;
+  margin: 0;
+  color: #f00;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: calc(15 / 12);
+  visibility: hidden;
+}
+
+.popup__error:last-of-type {
+  margin-bottom: 18px;
+}
+
+@media screen and (max-width: 767px) {
+  .popup__error:last-of-type {
+    margin-bottom: 14px;
+  }
+}

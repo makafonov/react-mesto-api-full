@@ -1,0 +1,14 @@
+.logo {
+  min-width: 142px;
+  min-height: 33px;
+  padding: 45px 0 40px 2px;
+  background: url(../../images/logo.svg) content-box no-repeat left / contain;
+}
+
+@media screen and (max-width: 767px) {
+  .logo {
+    min-width: 104px;
+    min-height: 24px;
+    padding: 28px 0 31px;
+  }
+}

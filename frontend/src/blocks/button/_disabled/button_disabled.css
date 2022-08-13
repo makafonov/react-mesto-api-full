@@ -1,0 +1,11 @@
+.button_disabled {
+  border-color: #000;
+  background-color: #fff;
+  color: #000;
+  opacity: .2;
+}
+
+.button_disabled:hover {
+  cursor: default;
+  opacity: .2;
+}

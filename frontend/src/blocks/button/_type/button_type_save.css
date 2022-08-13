@@ -1,0 +1,24 @@
+.button_type_save {
+  width: 100%;
+  padding: 13px 0;
+  border: 1px solid #000;
+  background-color: #000;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: calc(22 / 18);
+  text-align: center;
+  transition: opacity .3s ease;
+}
+
+.button_type_save:hover {
+  opacity: .8;
+}
+
+@media screen and (max-width: 767px) {
+  .button_type_save {
+    font-size: 14px;
+    line-height: calc(17 / 14);
+  }
+}

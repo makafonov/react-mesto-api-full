@@ -1,0 +1,14 @@
+.auth__input {
+  background-color: #000;
+  color: #fff;
+  border-color: #ccc;
+}
+
+.auth__input:focus {
+  outline: none;
+}
+
+.auth__input:-webkit-autofill {
+  -webkit-text-fill-color:#fff;
+  transition: background-color 5000s ease-in-out 0s;
+}

@@ -1,0 +1,8 @@
+.title {
+  margin: 0;
+  margin-bottom: 32px;
+  color: #000;  /* кастом */
+  font-size: 24px;
+  font-weight: 900;
+  line-height: calc(29 / 24);
+}
