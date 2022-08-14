@@ -26,7 +26,7 @@ const handleUserError = (err, next) => {
   }
 };
 
-const handleError = (err, req, res) => {
+const handleError = (err, req, res, next) => {
   const { statusCode = 500, message } = err;
 
   res
@@ -36,6 +36,8 @@ const handleError = (err, req, res) => {
         ? 'На сервере произошла ошибка'
         : message,
     });
+
+  next();
 };
 
 module.exports = {
