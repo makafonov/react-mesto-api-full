@@ -3,3 +3,4 @@
 
 - сервер: zl7@77.73.131.243
 - домен: [https://onemore.nomoredomains.sbs/](https://onemore.nomoredomains.sbs/)
+- api: [https://api.onemore.nomoredomains.sbs/](https://api.onemore.nomoredomains.sbs/)
